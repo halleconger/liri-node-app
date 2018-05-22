@@ -59,8 +59,7 @@ function movieThis() {
     }
 
     var queryUrl = "http://www.omdbapi.com/?t=" + userChoice + "&y=&plot=short&apikey=trilogy";
-    console.log(queryUrl);
-
+    
     request(queryUrl, function (error, response, body) {
         if (error) {
             console.log(error);
